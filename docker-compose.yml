@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  spring-boot-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATA_MONGODB_URI: "mongodb+srv://root:Chetan%40090302@javatech.kaxvfcj.mongodb.net/Student544?retryWrites=true&w=majority&appName=javatech"
